@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ContAct App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet"> <!-- Quicksand Font-->
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="includes/script.js"></script>
+</head>
+
+<!--First Page-->
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top" id="myNavbar">
+        <img id="arrowLeft" src="./images/arrowleft.png">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <article class="navbar-toggler-icon"></article>
+        </button>
+        <a class="navbar-brand" id="logo_icon" href="index.html"></a>
+        <a href="index.html">
+            <article id="logo" class="navbar-text">ContAct</article>
+        </a>
+        <a href="#" class="nav-item" id="userAvatar"><img src="./images/user.png"></a>
+        <section class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav" id="navnav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Business Cards</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" data-target="subMenu" href="#">Events</a>
+                    <article class="caret"></article>
+                    <section class="dropdown-menu" aria-labelledby="subMenu">
+                        <a href="#" class="dropdown-item">My Events</a>
+                        <a  href="recommended.html" class="dropdown-item active">Recommended</a>
+                        <a href="#" class="dropdown-item">Populars</a>
+                    </section>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log Out</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <main id="mainContent">
+        <h3 class="pageTitle">Recommended</h3>
+        <form class="form-inline">
+            <section class="form-group recform">
+                <label for="exampleFormControlSelect1">Sort By:</label>
+                <select class="form-control" value="Event" id="exampleFormControlSelect1">
+                    <option>Future Events</option>
+                    <option>Past Events</option>
+                </select>
+                <select class="form-control" value="Location" id="exampleFormControlSelect1">
+                    <option>Tel-Aviv</option>
+                    <option>Haifa</option>
+                    <option>Jerusalem</option>
+                    <option>Others...</option>
+                </select>
+            </section>
+        </form>
+        <section class="eventList">
+            <ul>
+               
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event2.png"></a>
+                        <h5 class="eventTitle">Tgeu Vteo</h5><br>
+                        <p>Ouogephs toler.</p>
+                        <a href="regToEvent.html" class="signBtn"></a>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event3.png"></a>
+                        <h5 class="eventTitle">Cwidhkr</h5><br>
+                        <p>Ejkd Gethjjso.</p>
+                        <a href="#" class="signBtn"></a>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event4.png"></a>
+                        <h5 class="eventTitle">MOrqf Gahjfk</h5><br>
+                        <p>Rskj skjd.</p>
+                        <a href="#" class="signBtn"></a>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event1.jpg"></a>
+                        <h5 class="eventTitle">ReThink Tech</h5><br>
+                        <p>Tortel Enodj abu.</p>
+                        <a href="#" class="signBtn"></a>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event1.jpg"></a>
+                        <h5 class="eventTitle">ReThink Tech</h5><br>
+                        <p>Tortel Enodj abu.</p>
+                        <a href="#" class="signBtn"></a>
+                    </section>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="sticy-footer">
+        <section class="iconsBox">
+            <a href="#"><img src="./images/profile.png" id="profileIcon"></a>
+            <a href="#"><img src="./images/eventsiconbottombar.png" id="profileIcon"></a>
+            <a href="#"><img src="./images/messagesicon.png" id="profileIcon">
+            <a href="#"><img src="./images/businesscardsicon.png" id="profileIcon"></a>
+        </section>
+    </footer>
+</body>
+</html>

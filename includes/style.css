@@ -1,0 +1,339 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+header, nav, main, footer, section, article {
+    display: block;
+}
+
+@viewport {
+    width: 480px;
+    zoom: 1;
+    }
+
+.clear {
+    clear: both;
+}
+
+
+body {
+    background: #333;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+
+    .navbar-brand {
+        background: url("../images/logo.png") no-repeat;
+        width: 61px;
+        height: 60px;
+    }
+
+    .navbar-text {
+        position: relative;
+        left: -50px;
+        font-size: 24px;
+    }
+
+    #noEventIcon {
+        background: url("../images/eventsicon.png") no-repeat;
+        width: 178px;
+        height: 168px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #navnav {
+        position: relative;
+        top: 25px;
+    }
+
+    .dropdown-item {
+        background: #007bff;
+        border: none;
+    }
+
+    .active {
+        background: #333;
+        opacity: .6;
+    }
+
+    #userAvatar {
+        position: relative;
+        float: right;
+        top: 0px;
+    }
+
+    .card {
+        background: #333;
+        width: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+        top: 80px;
+        font-size: 1.5rem;
+        text-align: center;
+        border: none;
+    }
+
+    .sticy-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: #007bff
+    }
+
+    .iconsBox {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #profileIcon {
+        margin-left: 15%;
+        margin-top: 16px;
+    }
+
+    #exampleFormControlSelect1 {
+        width: 40%;
+        padding-left: 2px;
+        margin-left: 5px;
+        margin-top: 4px;
+        font-size: 2vh;
+    }
+
+    .recform {
+        margin-left: 12px !important;
+        margin-top: 5% !important;
+        margin-right:0px !important; 
+        width: 100% !important;
+    }
+
+
+/* Recommended Page */
+
+    .eventBox {
+        position: relative;
+        width: 85%;
+        height: 90px;
+        top: 16px;
+        left: 16px;
+        border-bottom: solid 1px #fff;
+    }
+
+    .eventImgList {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #recommendedCardList {
+        width: 100px;
+        height: auto;
+    }
+
+    .eventImg {
+        float: left;
+    }
+
+    .eventTitle {
+        float: left;
+        margin-left: 6px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .eventBox p {
+        position: absolute;
+        left: 208px;
+        top: 30px;
+        font-size: 16px;
+    }
+
+    .eventItem {
+        padding-top: 8px;
+    }
+
+    .signBtn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        background: #007bff url("../images/signupicon.png");
+        right: 10px;
+        bottom: 10px;
+
+    }
+
+    .pageTitle {
+        position: relative;
+        top: 16px;
+        left: 50px;
+        font-size: 18px;
+        border-bottom: solid 2px #fff;
+        width: 140px;
+    }
+
+
+    /* Event Page */
+
+    #eventPageTitle {
+        width: 140px;
+        margin-bottom: 16px;
+    }
+    
+    .eventContent {
+        position: relative;
+        top: 30px;
+        width: 90%;
+        height: auto;
+        margin-left: 16px;
+
+    }
+
+    .speakersTitle {
+        color: #007bff;
+    }
+
+
+/* LightBox */
+
+    #lightboxBg {
+        position: absolute;
+        float: left;
+        width:100%;
+        height: 100%;
+        top: 0px;
+        background: #1f1f25;
+        opacity: .9;
+    }
+
+    #lightbox {
+        position: absolute;
+        float: left;
+        top: 150px;;
+        left:10%;
+        text-align: center;
+        color: #ffffff;
+        margin-left: 22px;
+    }
+
+    h2 {
+        font-size: 28px;
+        color: #007bff;
+    }
+
+    #closeIcon {
+        position: relative;
+        float: right;
+        right: 20px;
+        top: 100px;
+    }
+
+    #recommendedBtn {
+        width: 50%;
+        height: 60px;
+        background: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #recommendedBtn:hover {
+        opacity: .8;
+    }
+
+    /* CheckOut */
+
+    #checkOutTitle {
+        width: 85px;
+        margin-bottom: 20px;
+    }
+
+    .form-group{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .form-control {
+        width: 50px;
+        margin-left: 100px;
+    }
+
+    .progress {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #label {
+        float: left;
+        width: 200px;
+        margin-bottom: 100px;
+    }
+
+    @media (min-width: 576px){
+        footer{
+            display: none;
+        
+        }
+        #logo{
+            margin-left: 45%;
+        }
+        #logo_icon{
+            display: none;
+        }
+        #lightbox {
+          
+            left:30%;
+         
+        }
+        
+        
+        }
+        .success_registar{
+            background-image: url("../images/checked.svg") !important;
+            background-color: #333333 !important;
+        }
+        #registar_image{
+            width: 150%;
+        }
+        #registar_sec{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            top:25%;
+            left:25%;
+        }
+        #form{
+            position: absolute;
+            margin-left: 5%;
+            top:150%;
+        }
+        
+        #number_passengers{
+            position: absolute;
+            float: left;
+            margin-left: 185px;
+        }
+        #h3_ticket{
+            float: left;
+        }

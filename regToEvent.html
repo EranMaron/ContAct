@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ContAct App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet"> <!-- Quicksand Font-->
+    <link rel="stylesheet" type="text/css" href="includes/style.css">
+    <script src="includes/script.js"></script>
+</head>
+
+<!--First Page-->
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top" id="myNavbar">
+        <img id="arrowLeft" src="./images/arrowleft.png">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <article class="navbar-toggler-icon"></article>
+        </button>
+        <a class="navbar-brand" id="logo_icon" href="index.html"></a>
+        <a href="index.html">
+            <article id="logo" class="navbar-text">ContAct</article>
+        </a>
+        <a href="#" calss="nav-item" id="userAvatar"><img src="./images/user.png"></a>
+        <section class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav" id="navnav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Business Cards</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" data-target="subMenu" href="#">Events</a>
+                    <article class="caret"></article>
+                    <section class="dropdown-menu" aria-labelledby="subMenu">
+                        <a href="#" class="dropdown-item">My Events</a>
+                        <a href="recommended.html" class="dropdown-item">Recommended</a>
+                        <a href="#" class="dropdown-item">Populars</a>
+                    </section>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log Out</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <main id="mainContent">
+        <h3 class="pageTitle" id="eventPageTitle">registar event:</h3>
+        <section id="registar_sec">
+            <img id="registar_image" src="images/event2.png">
+            <h4>Tgeu Vteo</h4>
+            <section id="ticket">
+                <form id="form">
+                    <label><input type="number" min="0" max="10"  value="1" id="number_passengers"> ticket only-60$</label>
+                    <label><input type="number" min="0" max="10"  value="1" id="number_passengers">ticket+lunch-75$</label>
+                    <label>special coupon<input type="text" size=15></label>
+                    <input id="signBtn" type="button" value="continue">
+                </form>
+            </section>
+        </section>
+        <section id="lightboxBg">
+                <img id="closeIcon" src="./images/close.png" onclick="closeLightbox()">
+            </section>
+            <section id="lightbox">
+                <h2 >congratulations<br>you registar to the event</h2>
+                <p>the ticket will sent to you via mail</p>
+                <p>you made the right choice<br>we waiting for the event to come</p>
+                <button id="button_light" id="recommendedBtn" type="button" >my Events</button>
+            </section>
+
+            
+    </main>
+    <footer class="sticy-footer">
+        <section class="iconsBox">
+            <a href="#"><img src="./images/profile.png" id="profileIcon"></a>
+            <a href="#"><img src="./images/eventsiconbottombar.png" id="profileIcon"></a>
+            <a href="#"><img src="./images/messagesicon.png" id="profileIcon">
+            <a href="#"><img src="./images/businesscardsicon.png" id="profileIcon"></a>
+        </section>
+    </footer>
+</body>
+</html>
