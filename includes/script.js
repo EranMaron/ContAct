@@ -8,13 +8,13 @@ window.onload = function() {
     var signBtn = document.getElementById("signBtn");
     signBtn.onclick = function() {lightbox(lightBox, lightboxMessage)};
     $('#button_light').click(function(){
-        window.location.href='../after.html';
+        window.location.href='after.html';
     });
     $('#arrowLeft').click(function(){
         window.history.back();
     });
     $(".ligb").click(function(){
-        window.location.href='../new_rec.html';
+        window.location.href='new_rec.html';
     });
    
     
